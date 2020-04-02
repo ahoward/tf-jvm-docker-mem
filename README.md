@@ -84,3 +84,47 @@ mem: 29.96875
 
 
 ```
+
+
+worth mentioning is that, even if i comment out the JAVA_OPTS in ./mjava i get the *same results*
+
+
+eg
+
+```text
+
+gb=8
+cpu: 4
+mem: 2.0
+
+
+gb=16
+cpu: 4
+mem: 4.0
+
+
+gb=32
+cpu: 4
+mem: 8.0
+
+
+gb=64
+cpu: 4
+mem: 16.0
+
+
+gb=128
+cpu: 4
+mem: 29.96875
+
+
+gb=256
+cpu: 4
+mem: 29.96875
+
+
+gb=512
+cpu: 4
+mem: 29.96875
+
+```
