@@ -4,7 +4,7 @@ set -e
 
 MaxRAM=$(cat /sys/fs/cgroup/memory/memory.limit_in_bytes)
 
-export JAVA_OPTS="-XX:-UseCompressedOops XX:InitialRAMPercentage=50 XX:MaxRAMPercentage=80 -XX:MaxRAM=${MaxRAM}"
+export JAVA_OPTS="-XX:-UseCompressedOops -XX:InitialRAMPercentage=50 -XX:MaxRAMPercentage=80 -XX:MaxRAM=${MaxRAM}"
 
 echo "JAVA_OPTS=${JAVA_OPTS}" >> /dev/stderr
 
